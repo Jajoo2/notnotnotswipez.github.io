@@ -56,12 +56,10 @@ function createEntry(name, fileName) {
     namesElement.appendChild(newElement);
     
     newElement.addEventListener('mouseenter', function() {
-        console.log(name);
         newElement.style.color = "gray";
     });
 
     newElement.addEventListener('mouseleave', function() {
-        console.log(name);
         newElement.style.color = "white";
     });
 
