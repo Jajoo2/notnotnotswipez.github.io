@@ -7,12 +7,20 @@ var versionElement = document.getElementById("version");
 var lastUpdatedElement = document.getElementById("lastUpdated");
 var centerElement = document.getElementById("center");
 
+var defaultURL = "https://github.com/notnotnotswipez/notnotnotswipez.github.io/raw/refs/heads/main/Binaries/";
+var currentDownloadURL = "";
+var currentDownloadName = "";
+
 createEntry("TIMELINE", "timeline.txt");
 createEntry("BL FULL BODY TRACKING", "fullbody.txt");
 
 loadTextSettings("timeline.txt");
 
 repeatBackgroundText("LIGHTS CAMERA ACTION");
+
+downloadElement.addEventListener('click', function(){
+    downloadBegin(currentDownloadURL, currentDownloadName);
+});
 
 
 function loadTextSettings(fileName){
@@ -27,9 +35,10 @@ fetch(fileName)
     downloadElement.style.background = split[3];
     versionElement.style.color = split[3];
     centerElement.style.boxShadow = "5px 5px 1px " + split[3];
+    currentDownloadURL = defaultURL+split[4];
 
     let changelogTotal = "";
-    for (let i = 4; i < split.length; i++){
+    for (let i = 5; i < split.length; i++){
         changelogTotal += split[i] + "\n";
     }
 
@@ -60,6 +69,21 @@ function createEntry(name, fileName) {
         loadTextSettings(fileName);
         centerTitleElement.textContent = name;
     });
+}
+
+function downloadBegin(link, name){
+    fetch(link)
+    .then(response => response.blob())
+    .then(blob => {
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = name;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+  });
 }
 
 function repeatBackgroundText(repeat){
