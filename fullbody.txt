@@ -1,5 +1,5 @@
 1.0.0
-8/29/25
+9/7/25
 TRACK THOSE POINTS
 #3cb318ff
 BLFullBodyTracking.dll
