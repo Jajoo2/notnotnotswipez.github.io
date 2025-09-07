@@ -72,18 +72,12 @@ function createEntry(name, fileName) {
 }
 
 function downloadBegin(link, name){
-    fetch(link)
-    .then(response => response.blob())
-    .then(blob => {
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement("a");
-        a.href = url;
-        a.download = name;
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-        URL.revokeObjectURL(url);
-  });
+    const a = document.createElement("a");
+    a.href = link;
+    a.download = name;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
 }
 
 function repeatBackgroundText(repeat){
