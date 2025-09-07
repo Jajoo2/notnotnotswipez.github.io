@@ -3,4 +3,4 @@
 TRACK THOSE POINTS
 #3cb318ff
 BLFullBodyTracking.dll
-- Added failsafe for when feet are determined to be the same
+- Removed debug cubes
