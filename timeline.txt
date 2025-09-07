@@ -1,20 +1,12 @@
 0.5.0
-9/7/25
+9/1/25
 ACTION CAMERA LIGHT
 #d9af17
 Timeline.dll
-- Hi how are ya
-- This is the changelog
-- Test
-- Hi how are ya
-- This is the changelog
-- Test
-- Hi how are ya
-- This is the changelog
-- Test
-- Hi how are ya
-- This is the changelog
-- Test
-- Hi how are ya
-- This is the changelog
-- Test
+- Decreased timestep for recording (Smoother recordings with less interpolation)
+- Added support for SimpleSFX (Modders must still make their guns compatible)
+- Fixed bug that would cause a crash if no microphones were connected but microphone recording was enabled
+- Improved stability on recorded objects
+- Removed use world objects setting
+- Fixed "speedlimit" on vehicle playbacks
+- Fixed pause when ragdolling for a certain amount of time

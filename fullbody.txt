@@ -1,20 +1,6 @@
 1.0.0
-9/7/25
+8/29/25
 TRACK THOSE POINTS
 #3cb318ff
 BLFullBodyTracking.dll
-- Hi how are ya
-- This is the changelog for FBT
-- Legs moving gang
-- Hi how are ya
-- This is the changelog for FBT
-- Legs moving gang
-- Hi how are ya
-- This is the changelog for FBT
-- Legs moving gang
-- Hi how are ya
-- This is the changelog for FBT
-- Legs moving gang
-- Hi how are ya
-- This is the changelog for FBT
-- Legs moving gang
+- Added failsafe for when feet are determined to be the same

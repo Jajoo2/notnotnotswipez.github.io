@@ -67,7 +67,7 @@
     font-size: 15px;
     width: 98%;
     text-align: left;
-    white-space: pre;
+    white-space: pre-wrap;
     letter-spacing: 1px;
     top: 60px;
     margin-left: 1%;
