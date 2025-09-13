@@ -13,7 +13,7 @@
 
 .projectEntry {
     color: white;
-    font-family: Roboto;
+    font-family: "Roboto";
     user-select: none;
     letter-spacing: 3px;
     cursor: pointer;
@@ -45,7 +45,7 @@
     position: static;
     color: #d9af17;
     text-align: center;
-    font-family: Roboto;
+    font-family: "Roboto";
     font-size: clamp(20px, 10vw, 40px);
     font-weight: bold;
     text-overflow: clip;
@@ -82,7 +82,7 @@
     position: fixed;
     color: white;
     font-weight: bolder;
-    font-family: Roboto;
+    font-family: "Roboto";
     font-size: 16px;
     margin-left: 1%;
     top: 100px;
@@ -92,7 +92,7 @@
 .version {
     position: static;
     color: #d9af17;
-    font-family: Roboto;
+    font-family: "Roboto";
     font-weight: lighter;
     font-size: 20px;
     text-align: left;
@@ -111,7 +111,7 @@
 
 .downloadButton {
     color: white;
-    font-family: Roboto;
+    font-family: "Roboto";
     background: rgb(216, 139, 16);
     border-radius: 10px;
     padding: 10px;
@@ -128,7 +128,7 @@
     top: 0; 
     left: 0;
     color: rgba(31, 31, 31, 0.56);
-    font-family: Roboto;
+    font-family: "Roboto";
     font-weight: bold;
     font-size: 50px;
     text-align: left;
