@@ -11,6 +11,7 @@
     box-shadow: 2px 2px 2px #ffffff;
 }
 
+
 .projectEntry {
     color: white;
     font-family: "Roboto";
@@ -145,4 +146,21 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+    .names
+    {
+        font-size: small;
+        font-weight: bold;
+        flex-direction: column;
+    }
+   .center
+    {
+        width: 90%;
+    }
+    .downloadButton
+    {
+        font-size: x-large;
+    }
 }
